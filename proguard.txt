@@ -1,0 +1,15 @@
+-libraryjars <java.home>/lib/rt.jar
+
+-dontwarn org.apache.commons.logging.**
+-dontwarn com.sun.**
+
+-keep public class ca.utoronto.ece419.tester.Main { *; }
+-keep public class ca.utoronto.ece419.tester.wrapper.** { *; }
+-keep public class ca.utoronto.ece419.tester.test.* { *; }
+-keep, allowobfuscation public class ca.utoronto.ece419.tester.test.release.* { *; }
+-keepattributes *Annotation*
+
+-printmapping proguard.map
+
+-overloadaggressively
+-flattenpackagehierarchy ''
